@@ -26,14 +26,14 @@ Make sure you have the following software installed on your system:
 
 1. Clone the repository:
 
-    ```bash 
+  ```bash 
     git clone https://github.com/Huzaifa71/Django-form.git
-    ```
+  ```
 
 2. Change directory to the project folder:
 
     ```bash
-    cd cd Django-form
+    cd Django-form
     ```
 
 3. Install project dependencies:
