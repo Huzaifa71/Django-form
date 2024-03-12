@@ -19,21 +19,21 @@ These instructions will help you set up the project locally for development and 
 
 Make sure you have the following software installed on your system:
 
-- Python (version x.x)
-- Django (version x.x)
+- Python (version 3.9)
+- Django (version 4.2.11)
 
 ### Installation
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your-username/django-user-authentication.git
+    ```bash 
+    git clone https://github.com/Huzaifa71/Django-form.git
     ```
 
 2. Change directory to the project folder:
 
     ```bash
-    cd django-user-authentication
+    cd cd Django-form
     ```
 
 3. Install project dependencies:
