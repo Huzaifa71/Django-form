@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="{% static 'Images/django logo.png' %}" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+           <center> Django </center>
+        </div>
+        <form class="p-3 mt-3" action="" method="post">
+            {% csrf_token %}
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="userName" id="userName" placeholder="Username">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="email" name="email" id="useremail" placeholder="Email Address">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="confirm_password" id="cm_pwd" placeholder="Confirm Password">
+            </div>
+            <button class="btn-grad mt-3">Signup</button>
+        </form>
+        <div class="text-center fs-6">
+            <center><a href="{% url "signin" %}">Sign in</a></center>
+        </div>
+    </div>
+</body>
+</html>
